@@ -7,7 +7,6 @@ export default class Modal extends React.Component {
 
     handleOutsideClick = (e) => {
         //exits modal if clicked outside of modal
-        console.log(e.target.id)
         if (e.target.id === "") {
             document.removeEventListener("click", this.handleOutsideClick, false)
             this.onClose()
@@ -27,7 +26,7 @@ export default class Modal extends React.Component {
         }
         return (
             <div className="modal" id="modal" ref={node=>{this.node = node;}}>
-                <button onClick={()=>this.onClose}>Close</button>
+                <button onClick={()=>this.onClose} style={{float:"right"}}>Close</button>
                 <h2 id="modal">Modal Window</h2>
                 <div id="modal">{this.props.children}</div>                
             </div>

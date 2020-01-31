@@ -1,5 +1,7 @@
 import React from 'react'
 import style from "../style/styledcomponents"
+import quiz from "../images/quiz-app.png"
+import workout from "../images/workout-app.png"
 
 
 export default class Projects extends React.Component {
@@ -19,9 +21,11 @@ export default class Projects extends React.Component {
             <style.projectcontainer>
 
             <style.project onClick={()=>{this.handleClick("project1")}}>
+                <style.projectimg src={quiz}/>
             </style.project>
 
-            <style.project onClick={()=>{this.handleClick("project2")}}>            
+            <style.project onClick={()=>{this.handleClick("project2")}}>
+                <style.projectimg src={workout}/>          
             </style.project>
 
             <style.project onClick={()=>{this.handleClick("project3")}}>                
