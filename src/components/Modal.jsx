@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "../style/styledcomponents"
-import {IoIosCloseCircle, IoIosCode, IoMdLink} from "react-icons/io"
+
 
 export default class Modal extends React.Component {
     
@@ -35,7 +35,7 @@ export default class Modal extends React.Component {
 
                 <style.modalimg src={this.props.project.img} id="modal"/>
                 
-                <IoIosCloseCircle style={{position:"absolute",right:0, top:0, color:"#4D5061"}}size={"3vh"}></IoIosCloseCircle>
+                <i class="fa fa-times-circle fa-2x" style={{position:"absolute",right:"7px", top:"7px", color:"#4D5061"}}></i>
 
                 <style.modalinfo id="modal">
                 
@@ -54,15 +54,17 @@ export default class Modal extends React.Component {
                         
                     <style.modallinkdiv>
                         
-                        <style.modallink href={this.props.project.code} target="_blank">
-                            <div style={{paddingTop:"25px"}}>Code</div>
-                            <IoIosCode size={30} style={{paddingTop:"20px"}}></IoIosCode>
+                        <style.modallink href={this.props.project.code} target="_blank" rel="noopener noreferrer">
+                            <div style={{marginRight:"10px", marginLeft:"30px", marginTop:"10px"}}>Code</div>
+                            <i className="fa fa-code fa-2x" ></i>
                         </style.modallink>
-
-                        <style.modallink href={this.props.project.demo} target="_blank">
-                            <div style={{paddingTop:"25px"}}>Demo</div>
-                            <IoMdLink size={30} style={{paddingTop:"20px"}}></IoMdLink>
-                        </style.modallink>
+                        {this.props.project.demo !== "" &&
+                            <style.modallink href={this.props.project.demo} target="_blank" rel="noopener noreferrer">
+                            <div style={{marginRight:"10px", marginLeft:"30px", marginTop:"10px"}}>Demo</div>
+                            <i className="fa fa-link fa-2x" ></i>
+                            </style.modallink>
+                        }
+                        
 
                     </style.modallinkdiv>
                 </style.modalinfo>  

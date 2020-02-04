@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "../style/styledcomponents"
-import {FaServer, FaClone, FaDatabase} from "react-icons/fa"
+
 
 
 
@@ -14,7 +14,7 @@ export default function About() {
                 
                     <style.abouticon>
                     
-                    <FaServer size={"5vw"}></FaServer>
+                    <i className="fa fa-server fa-5x"></i>
                     <h2>Back End</h2>
                     </style.abouticon>
                     <style.aboutlist>
@@ -29,7 +29,7 @@ export default function About() {
             </style.aboutdiv>
             <style.aboutdiv>
                 <style.abouticon>
-                <FaClone size={"5vw"}></FaClone>
+                <i className="fa fa-clone fa-5x"></i>
                 <h2>Front End</h2>
                 </style.abouticon>
                 <style.aboutlist>
@@ -45,7 +45,7 @@ export default function About() {
             </style.aboutdiv>
             <style.aboutdiv>
                 <style.abouticon>
-                <FaDatabase size={"5vw"}></FaDatabase>
+                <i className="fa fa-database fa-5x"></i>
                 <h2>Database</h2>
                 </style.abouticon>
                 <style.aboutlist>

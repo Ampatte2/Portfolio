@@ -34,11 +34,11 @@ export default class Burger extends React.Component {
                     <style.burgeritem onClick={()=>scrollTo(0, "home")}>
                         Home
                     </style.burgeritem>
-                    <style.burgeritem onClick={()=>scrollTo(0, "work")}>
-                        Work
-                    </style.burgeritem>
                     <style.burgeritem onClick={()=>scrollTo(0, "about")}>
                         About Me
+                    </style.burgeritem>
+                    <style.burgeritem onClick={()=>scrollTo(0, "work")}>
+                        Work
                     </style.burgeritem>
                     <style.burgeritem onClick={()=>scrollTo(document.body.scrollHeight, "contact")}>
                         Contact

@@ -24,13 +24,17 @@ const navList = styled.ul`
 `
 const navListItem = styled.li`
     
-    padding:14px 16px;
+    
     text-decoration:none;
     text-align:center;
     font-size: 2vh;
-    padding-top:3vh;
+    padding-top:2vh;
+    padding-bottom:2vh;
     font-family:'Raleway', sans-serif;
     float:right;
+    &:hover{
+        color:#5C80BC
+    }
 `
 const navImg = styled.img`
     padding-top:3vh;
@@ -120,6 +124,16 @@ const bannerDiv = styled.div`
         font-size:2.0vh;
     }
    
+`
+const bannerIcon = styled.i`
+    margin-left:0.75vw;
+    color:#5C80BC;
+    @media${device.tablet}{
+        margin-left:3vw;
+    }
+    &:hover{
+        color:#E8C547;
+    }
 `
 const titleDiv = styled.div`
     width:50vw;
@@ -225,17 +239,24 @@ const aboutMeDiv = styled.div`
     border-color: rgba(92, 128, 188, 0.4);
     @media${device.tablet}{
         width:100%;
-        margin-top:5vh;
     }
     
 `
 const aboutMeList = styled.ul`
     text-align:left;
     list-style-type:none;
-    margin-left:7.5vw;
+    margin-left:5vw;
+    font-size:1.2vw;
+    
     @media${device.tablet}{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
         
-        margin-left:20vw;
+        margin-left:9vw;
+        font-size:3.5vw;
+        width:60%;
+        justify-content:space-between;
         
     }
     
@@ -274,7 +295,7 @@ const contactForm = styled.form`
     width:30vw;
     margin:auto;
     border:none;
-    padding-bottom: 20vh;
+    padding-bottom: 30vh;
     
     @media${device.laptopL}{
         width:50vw;
@@ -352,28 +373,33 @@ const modalInfo = styled.div`
 `
 const modalItem = styled.div`
     width:10vw;
-    padding:1vh;
-    border-radius:2px;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    border-radius:10px;
+    font-size:3vh;
     margin:5px;
     color: #CDD1C4;
     background-color:#5C80BC;
     @media${device.tablet}{
-        width:7.5vw;
+        
         font-size:2vw;
         padding:2vw;
     }
 `
 const modalDescription = styled.div`
     font-family: 'Merriweather', serif;
-    font-size:1rem;
+    font-size:2.5vh;
     line-height: 2;
-    margin-top:10vh;
+    margin-top:7.5vh;
     margin-left:2vw;
     margin-right:2vw;
     @media${device.tablet}{
         margin-top:2.5vh;
         font-size:1.5vh;
         
+    }
+    @media${device.mobileL}{
+        font-size:1.25vh;
     }
     
 `
@@ -434,6 +460,7 @@ const modalFramework = styled.div`
 const style = {
     nav: navbar,
     banner: bannerDiv,
+    bannericon:bannerIcon,
     project: projectDiv,
     projectcontainer: projectContainer,
     projectimg:projectImg,

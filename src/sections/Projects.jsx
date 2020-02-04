@@ -2,6 +2,7 @@ import React from 'react'
 import style from "../style/styledcomponents"
 import quiz from "../images/quiz-app.png"
 import workout from "../images/workout-app.png"
+import portfolio from "../images/portfolio-app.png"
 
 
 export default class Projects extends React.Component {
@@ -28,7 +29,8 @@ export default class Projects extends React.Component {
                 <style.projectimg src={workout}/>          
             </style.project>
 
-            <style.project onClick={()=>{this.handleClick("project3")}}>                
+            <style.project onClick={()=>{this.handleClick("project3")}}>
+                <style.projectimg src={portfolio}/>                
             </style.project>
             
             </style.projectcontainer>
