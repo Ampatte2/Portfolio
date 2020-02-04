@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {Navbar, Modal} from "./components"
 import {Banner, Projects, About, Contact} from "./sections"
+import projects from "./projectData";
 
 
 class App extends React.Component {
@@ -17,10 +18,10 @@ class App extends React.Component {
   
   showModal = (item) =>{
 
-    //sets modal to visible and describes the div that was clicked
+    //sets modal to visible and describes the div that was clicked in the projects with the project id
     this.setState({
         show: !this.state.show,
-        project: item
+        project: projects[item]
     })
 
     //sets blur to the rest of the document on modal open
@@ -41,10 +42,9 @@ class App extends React.Component {
       <Navbar></Navbar>
       <Banner></Banner>
       
-      <Projects handleClick={this.showModal} visible={this.state.show} id="Work"></Projects>
       
       <About id="About Me"></About>
-      
+      <Projects handleClick={this.showModal} visible={this.state.show} id="Work"></Projects>
 
       <Contact id="Contact"></Contact>
 

@@ -1,17 +1,22 @@
 import React from 'react'
 import style from "../style/styledcomponents"
 import {FaServer, FaClone, FaDatabase} from "react-icons/fa"
-import {IconContext} from "react-icons";
+
 
 
 export default function About() {
     return (
+        <>
+        <style.abouth1>About Me</style.abouth1>
         <style.about>
-            <IconContext.Provider value={{className:"aboutIcons"}}>
+            
             <style.aboutdiv>
-
-                    <FaServer size={"3vw"}></FaServer>
-
+                
+                    <style.abouticon>
+                    
+                    <FaServer size={"5vw"}></FaServer>
+                    <h2>Back End</h2>
+                    </style.abouticon>
                     <style.aboutlist>
                     <li>Axios</li>
                     <li>Bcrypt</li>
@@ -21,11 +26,12 @@ export default function About() {
                     <li>SocksJS</li>
                     </style.aboutlist>
 
-                </style.aboutdiv>
+            </style.aboutdiv>
             <style.aboutdiv>
-
-                <FaClone size={"3vw"}></FaClone>
-
+                <style.abouticon>
+                <FaClone size={"5vw"}></FaClone>
+                <h2>Front End</h2>
+                </style.abouticon>
                 <style.aboutlist>
                     <li>React</li>
                     <li>Redux</li>
@@ -38,18 +44,20 @@ export default function About() {
 
             </style.aboutdiv>
             <style.aboutdiv>
-
-                <FaDatabase size={"3vw"}></FaDatabase>
-
+                <style.abouticon>
+                <FaDatabase size={"5vw"}></FaDatabase>
+                <h2>Database</h2>
+                </style.abouticon>
                 <style.aboutlist>
                     <li>Mongoose</li>
                     <li>MongoDB</li>
                     <li>MySQL</li>
                     <li>CPanel MySQL</li>
                 </style.aboutlist>
-                            
+
             </style.aboutdiv>
-            </IconContext.Provider>
+           
         </style.about>
+        </>
     )
 }

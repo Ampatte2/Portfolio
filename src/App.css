@@ -10,22 +10,7 @@
   opacity: 0.9;
 }
 .modal{
-  width:40vw;
-  height:40vw;
-  position:fixed;
-  top:5vh;
-  left:30vw;
-  background: white;
-  border: 1px solid #ccc;
-  box-shadow: -0.5rem 0.5rem 1rem #4D5061;
-  filter: blur(0);
-  visibility:visible;
-  margin:none;
-  padding:none;
-  z-index: 99;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  
 
 }
 
@@ -50,15 +35,10 @@ input:focus{
   outline:none;
 }
 
-.aboutIcons{
-  margin-left:10vw;
+
+li{
   margin-top:2vh;
-  margin-bottom:2vh;
 }
 
-@media (max-width:1024){
-  .aboutIcons{
-    background-color: blue;
-  }
-}
+
 

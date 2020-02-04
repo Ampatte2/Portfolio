@@ -16,9 +16,9 @@ export default class Burger extends React.Component {
     
 
     handleClick(){
-        console.log(this.state.visibility)
+        console.log(window.innerWidth, window.innerWidth)
         if(this.state.visibility==="hidden"){
-            this.setState({visibility:"visible", height:"30%"})
+            this.setState({visibility:"visible", height:"50vh"})
         }else{
             this.setState({visibility:"hidden", height:"0"})
         }

@@ -1,21 +1,19 @@
-import React from "react"
-
 function scrollTo(x, div){
     let innerHeight = window.innerHeight;
     if(div==="home" || div==="contact"){
         window.scrollTo(0,x);
         return
     }else if(window.innerWidth<800){
-        if(div==="work"){
-            window.scroll(0,(innerHeight*0.75))
+        if(div==="about"){
+            window.scroll(0,(innerHeight*0.9))
         }else{
-            window.scroll(0, (innerHeight*1.75))
+            window.scroll(0, (innerHeight*2.79))
         }
     }else{
-        if(div==="work"){
-            window.scroll(0,(innerHeight*0.60))
+        if(div==="about"){
+            window.scroll(0,(innerHeight*0.9))
         }else{
-            window.scroll(0, (innerHeight*1.6))
+            window.scroll(0, (innerHeight*1.67))
         }
     }
 
