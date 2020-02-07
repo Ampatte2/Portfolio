@@ -50,11 +50,12 @@ const burgerButton = styled.button`
     top:2.5vh;
     overflow: hidden;
     float:right;
-    background-color:transparent
+    background-color:transparent;
     
     
 `
 const burgerDiv = styled.div`
+
     position:fixed;
     top:10vh;
     width:25vw;
@@ -69,7 +70,6 @@ const burgerDiv = styled.div`
     box-shadow: 0px 1px 0px 0px #4D5061;
     background-color: white;
     border: 1px solid rgba(92, 128, 188, 0.5);
-    
     
 `
 const burgerItem = styled.button`
@@ -293,7 +293,9 @@ const contactForm = styled.form`
     display:flex;
     flex-direction: column;
     width:30vw;
+    font-size:3.0vmin;
     margin:auto;
+    margin-top:4vh;
     border:none;
     padding-bottom: 30vh;
     
@@ -312,7 +314,7 @@ const contactButton = styled.button`
     cursor: pointer;
     color: #CDD1C4;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 14px;
+    font-size: 2.5vmin;
     padding: 8px 18px;
     text-decoration: none;
     text-transform: uppercase;
@@ -378,8 +380,8 @@ const modalItem = styled.div`
     border-radius:10px;
     font-size:3vh;
     margin:5px;
-    color: #CDD1C4;
-    background-color:#5C80BC;
+    color: #4D5061;
+    
     @media${device.tablet}{
         
         font-size:2vw;
@@ -388,34 +390,31 @@ const modalItem = styled.div`
 `
 const modalDescription = styled.div`
     font-family: 'Merriweather', serif;
-    font-size:2.5vh;
+    font-size:2vmin;
     line-height: 2;
     margin-top:7.5vh;
     margin-left:2vw;
     margin-right:2vw;
     @media${device.tablet}{
         margin-top:2.5vh;
-        font-size:1.5vh;
+        font-size:2.5vmin;
         
     }
-    @media${device.mobileL}{
-        font-size:1.25vh;
-    }
+    
     
 `
-const modalBanner = styled.div`
-    
-    
-    
-    
+const modalHeader = styled.h2`
+    font-size: 3.5vmin;
 `
 const modalLink = styled.a`
     margin-left:2vw;
     display:flex;
     flex-direction:row;
-    
-    
+    color:#CDD1C4;
+    border-radius:5px;
+    padding:0.5vmin;
     text-decoration:none;
+    background-color:#5C80BC;
     &:visited{
         text-decoration:none;
         color:#4D5061;
@@ -477,7 +476,7 @@ const style = {
     modalimg:modalImg,
     modalinfo:modalInfo,
     modalitem:modalItem,
-    modalbanner: modalBanner,
+    modalheader: modalHeader,
     modallink: modalLink,
     modaldescription: modalDescription,
     modallinkdiv: modalLinkDiv,

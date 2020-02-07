@@ -15,7 +15,7 @@ export default class MyForm extends React.Component {
     const { status } = this.state;
     return (
         <style.contact>
-            <h1 style={{color:"#4D5061"}}>Contact Me</h1>
+            <h1 style={{color:"#4D5061", fontSize:"4vmin"}}>Contact Me</h1>
       <style.contactform onSubmit={this.submitForm} action="https://formspree.io/mnqdqend" method="POST">
         <label>Name</label>
         <input type="text" name="name"/>

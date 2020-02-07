@@ -39,7 +39,7 @@ export default class Modal extends React.Component {
 
                 <style.modalinfo id="modal">
                 
-                    <h2 id="modal">{this.props.project.title}</h2>
+                    <style.modalheader id="modal">{this.props.project.title}</style.modalheader>
                 
                 
                     <style.modalframework id="modal">
@@ -55,12 +55,12 @@ export default class Modal extends React.Component {
                     <style.modallinkdiv>
                         
                         <style.modallink href={this.props.project.code} target="_blank" rel="noopener noreferrer">
-                            <div style={{marginRight:"10px", marginLeft:"30px", marginTop:"10px"}}>Code</div>
+                            <div style={{marginRight:"10px", marginLeft:"30px", marginTop:"0.5vmin", color:"#CDD1C4"}}>Code</div>
                             <i className="fa fa-code fa-2x" ></i>
                         </style.modallink>
                         {this.props.project.demo !== "" &&
                             <style.modallink href={this.props.project.demo} target="_blank" rel="noopener noreferrer">
-                            <div style={{marginRight:"10px", marginLeft:"30px", marginTop:"10px"}}>Demo</div>
+                            <div style={{marginRight:"10px", marginLeft:"30px", marginTop:"0.5vmin", color:"#CDD1C4"}}>Demo</div>
                             <i className="fa fa-link fa-2x" ></i>
                             </style.modallink>
                         }

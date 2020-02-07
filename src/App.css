@@ -32,8 +32,9 @@ label{
 }
 input{
   border:none;
+  font-size:2vmin;
   border-bottom: 1px solid black;
-  padding:7px;
+  padding:2vmin;
   margin-bottom:20px;
   border-radius: 5px;
 }
