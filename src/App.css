@@ -49,5 +49,15 @@ li{
   margin-left:3vw;
 }
 
+.modalCircle{
+  position:"absolute";
+  right:"20px";
+  top:"7px";
+  color:"#4D5061";
+}
+.modalCircle:hover{
+  color:white;
+}
+
 
 

@@ -55,13 +55,13 @@ export default class Modal extends React.Component {
                     <style.modallinkdiv>
                         
                         <style.modallink href={this.props.project.code} target="_blank" rel="noopener noreferrer">
-                            <div style={{marginRight:"10px", marginLeft:"30px", marginTop:"0.5vmin", color:"#CDD1C4"}}>Code</div>
-                            <i className="fa fa-code fa-2x" ></i>
+                            <div style={{marginRight:"10px", marginLeft:"30px", marginTop:"1vmin", color:"#CDD1C4"}}>Code</div>
+                            <i className="fa fa-code fa-2x" style={{marginRight:"1vmin"}}></i>
                         </style.modallink>
                         {this.props.project.demo !== "" &&
                             <style.modallink href={this.props.project.demo} target="_blank" rel="noopener noreferrer">
-                            <div style={{marginRight:"10px", marginLeft:"30px", marginTop:"0.5vmin", color:"#CDD1C4"}}>Demo</div>
-                            <i className="fa fa-link fa-2x" ></i>
+                            <div style={{marginRight:"10px", marginLeft:"30px", marginTop:"1vmin", color:"#CDD1C4"}}>Demo</div>
+                            <i className="fa fa-link fa-2x" style={{marginRight:"1vmin"}}></i>
                             </style.modallink>
                         }
                         

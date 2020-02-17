@@ -297,7 +297,7 @@ const contactForm = styled.form`
     margin:auto;
     margin-top:4vh;
     border:none;
-    padding-bottom: 30vh;
+    padding-bottom: 15vh;
     
     @media${device.laptopL}{
         width:50vw;
@@ -364,7 +364,7 @@ const modalButton = styled.button`
     top:0;
     right:0;
     border:none;
-    padding:0;
+    padding:1vh;
     @media${device.tablet}{
         
     }
@@ -412,7 +412,7 @@ const modalLink = styled.a`
     flex-direction:row;
     color:#CDD1C4;
     border-radius:5px;
-    padding:0.5vmin;
+    padding:1vmin;
     text-decoration:none;
     background-color:#5C80BC;
     &:visited{
