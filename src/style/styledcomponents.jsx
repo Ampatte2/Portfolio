@@ -353,9 +353,15 @@ const modalImg = styled.img`
     width:40vw;
     height:40vw;
     border-radius:5px;
+    margin-left:auto;
+    margin-right:auto;
     @media${device.tablet}{
-        width:90vw;
-        height:45vh;
+        width:50vw;
+        height:50vw;
+    }
+    @media${device.mobileL}{
+        width:70vw;
+        height:65vw;
     }
     
 `
@@ -397,8 +403,11 @@ const modalDescription = styled.div`
     margin-right:2vw;
     @media${device.tablet}{
         margin-top:2.5vh;
-        font-size:2.5vmin;
+        font-size:2.0vmin;
         
+    }
+    @media${device.mobileL}{
+        font-size:3vmin;
     }
     
     

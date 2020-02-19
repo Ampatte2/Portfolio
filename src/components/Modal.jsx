@@ -51,7 +51,13 @@ export default class Modal extends React.Component {
                     <style.modaldescription>
                         {this.props.project.description}
                     </style.modaldescription>
-                        
+                    
+                    {this.props.project.demo !== "" &&
+                        <style.modaldescription>
+                            Demo Hosted On Heroku. Allow a Minute To Load.
+                        </style.modaldescription>
+                    }
+
                     <style.modallinkdiv>
                         
                         <style.modallink href={this.props.project.code} target="_blank" rel="noopener noreferrer">
