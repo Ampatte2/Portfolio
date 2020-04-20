@@ -319,6 +319,10 @@ const contactButton = styled.button`
     text-decoration: none;
     text-transform: uppercase;
     border-radius:5px;
+    &:hover{
+        background-color:#E8C547;
+        color:black;
+    }
 `
 //modal styles
 

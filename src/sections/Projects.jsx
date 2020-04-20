@@ -3,6 +3,9 @@ import style from "../style/styledcomponents"
 import quiz from "../images/quiz-app.png"
 import workout from "../images/workout-app.png"
 import portfolio from "../images/portfolio-app.png"
+import mtgbuilder from "../images/mtg-builder.png"
+import styled from 'styled-components'
+
 
 
 export default class Projects extends React.Component {
@@ -20,6 +23,10 @@ export default class Projects extends React.Component {
 
         return (
             <style.projectcontainer>
+            
+            <style.project onClick={()=>this.handleClick("project4")}>
+                <style.projectimg src={mtgbuilder}/>
+            </style.project>
 
             <style.project onClick={()=>{this.handleClick("project1")}}>
                 <style.projectimg src={quiz}/>
